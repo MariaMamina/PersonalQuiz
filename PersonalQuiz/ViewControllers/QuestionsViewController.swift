@@ -129,7 +129,7 @@ extension QuestionsViewController {
     
     private func showRangedStackView(with answers: [Answer]) {
         rangedStackView.isHidden = false
-        
+        rangedSlider.value = rangedSlider.maximumValue/2
         rangedLabels.first?.text = answers.first?.text
         rangedLabels.last?.text = answers.last?.text
     }
